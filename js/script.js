@@ -29,3 +29,8 @@ function main() {
             document.getElementById("resultado").innerHTML = "Acertou";
         }
 }
+
+function numeroUm() {
+    const element = document.querySelector("#digitos");
+    element.classList.add("um")
+}
