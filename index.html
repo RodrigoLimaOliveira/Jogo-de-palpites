@@ -7,54 +7,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Qual é o número?</h1>
+        <hr>
     </header>
-    <div>
-        <h2 id="resultado"></h2>
-        <p id="displayNum">0</p>
+    <div class="principal container">
+        <div class="mensagem">
+            <h2 id="resultado"></h2>
+        </div>
+        <div class="campo">
+            <div id="digitos" class="digitos">
+                <div class="d1"></div>
+                <div class="d2"></div>
+                <div class="d3"></div>
+                <div class="d4"></div>
+                <div class="d5"></div>
+                <div class="d6"></div>
+                <div class="d7"></div>
+            </div>
+        </div>
     </div>
-    <div>
+    <div class="formulario">
         <form>
-            <input type="text" autofocus="autofocus" placeholder="Digite o palpite" name="palpite" id="palpite">
-            <button type="button" onclick="main()">Enviar</button>
+            <input type="text" autofocus="autofocus" placeholder="Digite o palpite" name="palpite" id="palpite" autocomplete="off">
+            <button type="button" onclick="jogar(), mudarDigito()">Enviar</button>
         </form>
-    </div><br>
-
-    <div class="campo container">
-        <div id="digitos" class="digitos">
-            <div class="d1"></div>
-            <div class="d2"></div>
-            <div class="d3"></div>
-            <div class="d4"></div>
-            <div class="d5"></div>
-            <div class="d6"></div>
-            <div class="d7"></div>
-        </div>
-        <div id="digitos" class="digitos">
-            <div class="d1"></div>
-            <div class="d2"></div>
-            <div class="d3"></div>
-            <div class="d4"></div>
-            <div class="d5"></div>
-            <div class="d6"></div>
-            <div class="d7"></div>
-        </div>
-        <div id="digitos" class="digitos">
-            <div class="d1"></div>
-            <div class="d2"></div>
-            <div class="d3"></div>
-            <div class="d4"></div>
-            <div class="d5"></div>
-            <div class="d6"></div>
-            <div class="d7"></div>
-        </div>
     </div>
-    <button type="button" onclick="numeroUm()">Chamar</button>
     <script src="js/script.js"></script>
 </body>
 </html>

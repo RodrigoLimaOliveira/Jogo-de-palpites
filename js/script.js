@@ -1,4 +1,4 @@
-
+/* Função de envio da requisição*/
 function fazerGet(url) {
     let request = new XMLHttpRequest()
     request.open("GET", url, false)
@@ -8,29 +8,30 @@ function fazerGet(url) {
 
 const json = (fazerGet("https://us-central1-ss-devops.cloudfunctions.net/rand?min=1&max=300"));
 
-function main() {
+
+/*Função que compara o palpite com o valore aleatório recebido na requisição*/
+function jogar() {
 
     var palpite = document.getElementById("palpite").value;
     
     data = JSON.parse(json);
-    document.getElementById("displayNum").innerHTML = palpite;
-    
     var resposta = data.value;
 
     console.log(resposta);
         
         if(palpite > resposta) {
-            document.getElementById("resultado").innerHTML = "Maior";
+            document.getElementById("resultado").innerHTML = "É maior";
         }
         else if (palpite < resposta) {
-            document.getElementById("resultado").innerHTML = "Menor";
+            document.getElementById("resultado").innerHTML = "É menor";
         }
         else {
-            document.getElementById("resultado").innerHTML = "Acertou";
+            document.getElementById("resultado").innerHTML = "Você acertou!!!!";
         }
 }
 
-function numeroUm() {
+/*Função para adicionar classe mudando o algarismo no mostrador de led*/
+function mudarDigito() {
     const element = document.querySelector("#digitos");
     var palpite = document.getElementById("palpite").value;
 
@@ -66,6 +67,4 @@ function numeroUm() {
             element.classList.add("nove")
             break;
     }
-    
-    
 }
