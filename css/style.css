@@ -5,6 +5,13 @@
     padding: 0;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 /* estilo geral */
 
 html {
@@ -15,7 +22,7 @@ html {
 
 header {
     text-align: center;
-    margin: 50px 0 80px 0;
+    margin: 62px 0 70px 0;
 }
 
 h1 {
@@ -52,10 +59,38 @@ hr {
     text-align: center;
 }
 
-.digitos {
+.digito {
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
+
+#segmentos-2, #segmentos-3{
+   display: none;            /*ocultar digitos não utilizados */  
+} 
+
+.segmentos {
+    display: inline-block;
     width: 50px;
     height: 108px;
-    margin: 0 auto 100px auto;
+}
+
+.refresh {
+    text-align: center;
+    margin: 0px auto 60px auto;
+}
+
+.novaPartida {
+    font-family: Roboto, serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14,06px;
+    text-transform: uppercase;
+    width: 130px;
+    height: 42px;
+    border-radius: 4px;
+    color:#FFFFFF;
+    background: linear-gradient(180deg, #434854 0%, #9E9E9E 100%);
+    border: none;
 }
 
 .formulario {
@@ -102,8 +137,8 @@ hr {
 
 /* Segmentos do LED */
 
-/*d1*/
-.d1 {
+/*seg1*/
+.seg1 {
     position: relative;
     left: 10px;
     display: block;
@@ -112,7 +147,7 @@ hr {
     background-color: #DDDDDD;
 }
 
-.d1:before {
+.seg1:before {
     content: " ";
     position: absolute;
     display: block;
@@ -124,7 +159,7 @@ hr {
     border-color: transparent #DDDDDD transparent transparent;
 }
 
-.d1:after {
+.seg1:after {
     content: " ";
     position: absolute;
     display: block;
@@ -135,8 +170,8 @@ hr {
     border-width: 10px 10px 0 0;
     border-color: #DDDDDD transparent transparent transparent;
 }
-/*d2*/
-.d2 {
+/*seg2*/
+.seg2 {
     top: 3px;
     position: relative;
     display: block;
@@ -145,7 +180,7 @@ hr {
     background: #DDDDDD;
 }
 
-.d2:before {
+.seg2:before {
     content: " ";
     position: absolute;
     display: block;
@@ -157,7 +192,7 @@ hr {
     border-color: transparent transparent transparent #DDDDDD;
 }
 
-.d2:after {
+.seg2:after {
     content: " ";
     position: absolute;
     display: block;
@@ -168,8 +203,8 @@ hr {
     border-width: 10px 10px 0 0;
     border-color:#DDDDDD transparent transparent transparent;
 }
-/*d3*/
-.d3 {
+/*seg3*/
+.seg3 {
     left: 40px;
     bottom: 27px;
     position: relative;
@@ -179,7 +214,7 @@ hr {
     background: #DDDDDD;
 }
 
-.d3:before {
+.seg3:before {
     content: " ";
     position: absolute;
     display: block;
@@ -191,7 +226,7 @@ hr {
     border-color: transparent transparent #DDDDDD transparent;
 }
 
-.d3:after {
+.seg3:after {
     content: " ";
     position: absolute;
     display: block;
@@ -202,8 +237,8 @@ hr {
     border-width: 0 10px 10px 0;
     border-color: transparent #DDDDDD transparent transparent;
 }
-/*d4*/
-.d4 {
+/*seg4*/
+.seg4 {
     bottom: 5px;
     position: relative;
     display: block;
@@ -212,7 +247,7 @@ hr {
     background: #DDDDDD;
 }
 
-.d4:before {
+.seg4:before {
     content: " ";
     position: absolute;
     display: block;
@@ -224,7 +259,7 @@ hr {
     border-color: transparent transparent transparent #DDDDDD;
 }
 
-.d4:after {
+.seg4:after {
     content: " ";
     position: absolute;
     display: block;
@@ -235,8 +270,8 @@ hr {
     border-width: 10px 10px 0 0;
     border-color: #DDDDDD transparent transparent transparent;
 }
-/*d5*/
-.d5 {
+/*seg5*/
+.seg5 {
     left: 40px;
     bottom: 35px;
     position: relative;
@@ -246,7 +281,7 @@ hr {
     background: #DDDDDD;
 }
 
-.d5:before {
+.seg5:before {
     content: " ";
     position: absolute;
     display: block;
@@ -258,7 +293,7 @@ hr {
     border-color: transparent transparent #DDDDDD transparent;
 }
 
-.d5:after {
+.seg5:after {
     content: " ";
     position: absolute;
     display: block;
@@ -269,8 +304,8 @@ hr {
     border-width: 0 10px 10px 0;
     border-color: transparent #DDDDDD transparent transparent;
 }
-/*d6*/
-.d6 {
+/*seg6*/
+.seg6 {
     position: relative;
     bottom: 81px;
     left: 10px;
@@ -280,7 +315,7 @@ hr {
     background: #DDDDDD;
 }
 
-.d6:before {
+.seg6:before {
     content: " ";
     position: absolute;
     display: block;
@@ -292,7 +327,7 @@ hr {
     border-color: transparent #DDDDDD transparent transparent;
 }
 
-.d6:after {
+.seg6:after {
     content: " ";
     position: absolute;
     display: block;
@@ -303,8 +338,8 @@ hr {
     border-width: 5px 0 5px 10px;
     border-color: transparent transparent transparent #DDDDDD;
 }
-/*d7*/
-.d7 {
+/*seg7*/
+.seg7 {
     position: relative;
     display: block;
     bottom: 42px;
@@ -314,7 +349,7 @@ hr {
     background: #DDDDDD;
 }
 
-.d7:before {
+.seg7:before {
     content: " ";
     position: absolute;
     display: block;
@@ -326,7 +361,7 @@ hr {
     border-color: transparent transparent #DDDDDD transparent;
 }
 
-.d7:after {
+.seg7:after {
     content: " ";
     position: absolute;
     display: block;
@@ -341,162 +376,165 @@ hr {
 /* Fomatação dos números no led */
 
 /* Digito zero */
-.zero .d1 {background-color: #262A34;}
-.zero .d2 {background-color: #262A34;}
-.zero .d3 {background-color: #262A34;}
-.zero .d4 {background-color: #262A34;}
-.zero .d5 {background-color: #262A34;}
-.zero .d7 {background-color: #262A34;}
-.zero .d1:before {border-color: transparent #262626 transparent transparent;}
-.zero .d1:after {border-color: #262626 transparent transparent transparent;}
-.zero .d2:before {border-color: transparent transparent transparent #262626 ;}
-.zero .d2:after {border-color: #262626 transparent transparent transparent;}
-.zero .d3:before {border-color: transparent transparent #262626 transparent;}
-.zero .d3:after {border-color: transparent #262626 transparent transparent;}
-.zero .d4:before {border-color: transparent transparent transparent #262626;}
-.zero .d4:after {border-color: #262626 transparent transparent transparent;}
-.zero .d5:before {border-color: transparent transparent #262626 transparent;}
-.zero .d5:after {border-color: transparent #262626 transparent transparent;}
-.zero .d7:before {border-color: transparent transparent #262626 transparent;}
-.zero .d7:after {border-color: transparent transparent transparent #262626;}
+.zero .seg1 {background-color: #262A34;}
+.zero .seg2 {background-color: #262A34;}
+.zero .seg3 {background-color: #262A34;}
+.zero .seg4 {background-color: #262A34;}
+.zero .seg5 {background-color: #262A34;}
+.zero .seg7 {background-color: #262A34;}
+.zero .seg1:before {border-color: transparent #262626 transparent transparent;}
+.zero .seg1:after {border-color: #262626 transparent transparent transparent;}
+.zero .seg2:before {border-color: transparent transparent transparent #262626 ;}
+.zero .seg2:after {border-color: #262626 transparent transparent transparent;}
+.zero .seg3:before {border-color: transparent transparent #262626 transparent;}
+.zero .seg3:after {border-color: transparent #262626 transparent transparent;}
+.zero .seg4:before {border-color: transparent transparent transparent #262626;}
+.zero .seg4:after {border-color: #262626 transparent transparent transparent;}
+.zero .seg5:before {border-color: transparent transparent #262626 transparent;}
+.zero .seg5:after {border-color: transparent #262626 transparent transparent;}
+.zero .seg7:before {border-color: transparent transparent #262626 transparent;}
+.zero .seg7:after {border-color: transparent transparent transparent #262626;}
 
 /* Digito um */
-.um .d3 {background-color: #262A34;}
-.um .d5 {background-color: #262A34;}
-.um .d3:before {border-color: transparent transparent #262626 transparent;}
-.um .d3:after {border-color: transparent #262626 transparent transparent;}
-.um .d5:before {border-color: transparent transparent #262626 transparent;}
-.um .d5:after {border-color: transparent #262626 transparent transparent;}
+.um .seg3 {background-color: #262A34;}
+.um .seg5 {background-color: #262A34;}
+.um .seg3:before {border-color: transparent transparent #262626 transparent;}
+.um .seg3:after {border-color: transparent #262626 transparent transparent;}
+.um .seg5:before {border-color: transparent transparent #262626 transparent;}
+.um .seg5:after {border-color: transparent #262626 transparent transparent;}
 
 /* Digito dois */
-.dois .d1 {background-color: #262A34;}
-.dois .d3 {background-color: #262A34;}
-.dois .d6 {background-color: #262A34;}
-.dois .d4 {background-color: #262A34;}
-.dois .d7 {background-color: #262A34;}
-.dois .d1:before {border-color: transparent  #262626 transparent transparent;}
-.dois .d1:after {border-color: #262626 transparent transparent transparent;}
-.dois .d3:before {border-color: transparent transparent #262626 transparent;}
-.dois .d3:after {border-color: transparent #262626 transparent transparent;}
-.dois .d6:before {border-color: transparent #262626 transparent transparent;}
-.dois .d6:after {border-color: transparent transparent transparent #262626;}
-.dois .d4:before {border-color: transparent transparent transparent #262626;}
-.dois .d4:after {border-color: #262626 transparent transparent transparent;}
-.dois .d7:before {border-color: transparent transparent #262626 transparent;}
-.dois .d7:after {border-color: transparent transparent transparent #262626;}
+.dois .seg1 {background-color: #262A34;}
+.dois .seg3 {background-color: #262A34;}
+.dois .seg6 {background-color: #262A34;}
+.dois .seg4 {background-color: #262A34;}
+.dois .seg7 {background-color: #262A34;}
+.dois .seg1:before {border-color: transparent  #262626 transparent transparent;}
+.dois .seg1:after {border-color: #262626 transparent transparent transparent;}
+.dois .seg3:before {border-color: transparent transparent #262626 transparent;}
+.dois .seg3:after {border-color: transparent #262626 transparent transparent;}
+.dois .seg6:before {border-color: transparent #262626 transparent transparent;}
+.dois .seg6:after {border-color: transparent transparent transparent #262626;}
+.dois .seg4:before {border-color: transparent transparent transparent #262626;}
+.dois .seg4:after {border-color: #262626 transparent transparent transparent;}
+.dois .seg7:before {border-color: transparent transparent #262626 transparent;}
+.dois .seg7:after {border-color: transparent transparent transparent #262626;}
 
 /* Digito tres */
-.tres .d1 {background-color: #262A34;}
-.tres .d3 {background-color: #262A34;}
-.tres .d5 {background-color: #262A34;}
-.tres .d6 {background-color: #262A34;}
-.tres .d7 {background-color: #262A34;}
-.tres .d1:before {border-color: transparent  #262626 transparent transparent;}
-.tres .d1:after {border-color: #262626 transparent transparent transparent;}
-.tres .d3:before {border-color: transparent transparent #262626 transparent;}
-.tres .d3:after {border-color: transparent #262626 transparent transparent;}
-.tres .d5:before {border-color: transparent transparent #262626 transparent;}
-.tres .d5:after {border-color: transparent #262626 transparent transparent;}
-.tres .d6:before {border-color: transparent #262626 transparent transparent;}
-.tres .d6:after {border-color: transparent transparent transparent #262626;}
-.tres .d7:before {border-color: transparent transparent #262626 transparent;}
-.tres .d7:after {border-color: transparent transparent transparent #262626;}
+.tres .seg1 {background-color: #262A34;}
+.tres .seg3 {background-color: #262A34;}
+.tres .seg5 {background-color: #262A34;}
+.tres .seg6 {background-color: #262A34;}
+.tres .seg7 {background-color: #262A34;}
+.tres .seg1:before {border-color: transparent  #262626 transparent transparent;}
+.tres .seg1:after {border-color: #262626 transparent transparent transparent;}
+.tres .seg3:before {border-color: transparent transparent #262626 transparent;}
+.tres .seg3:after {border-color: transparent #262626 transparent transparent;}
+.tres .seg5:before {border-color: transparent transparent #262626 transparent;}
+.tres .seg5:after {border-color: transparent #262626 transparent transparent;}
+.tres .seg6:before {border-color: transparent #262626 transparent transparent;}
+.tres .seg6:after {border-color: transparent transparent transparent #262626;}
+.tres .seg7:before {border-color: transparent transparent #262626 transparent;}
+.tres .seg7:after {border-color: transparent transparent transparent #262626;}
 
 /* Digito quatro */
-.quatro .d2 {background-color: #262A34;}
-.quatro .d3 {background-color: #262A34;}
-.quatro .d5 {background-color: #262A34;}
-.quatro .d6 {background-color: #262A34;}
-.quatro .d2:before {border-color: transparent transparent transparent #262626 ;}
-.quatro .d2:after {border-color: #262626 transparent transparent transparent;}
-.quatro .d3:before {border-color: transparent transparent #262626 transparent;}
-.quatro .d3:after {border-color: transparent #262626 transparent transparent;}
-.quatro .d5:before {border-color: transparent transparent #262626 transparent;}
-.quatro .d5:after {border-color: transparent #262626 transparent transparent;}
-.quatro .d6:before {border-color: transparent #262626 transparent transparent;}
-.quatro .d6:after {border-color: transparent transparent transparent #262626;}
+.quatro .seg2 {background-color: #262A34;}
+.quatro .seg3 {background-color: #262A34;}
+.quatro .seg5 {background-color: #262A34;}
+.quatro .seg6 {background-color: #262A34;}
+.quatro .seg2:before {border-color: transparent transparent transparent #262626 ;}
+.quatro .seg2:after {border-color: #262626 transparent transparent transparent;}
+.quatro .seg3:before {border-color: transparent transparent #262626 transparent;}
+.quatro .seg3:after {border-color: transparent #262626 transparent transparent;}
+.quatro .seg5:before {border-color: transparent transparent #262626 transparent;}
+.quatro .seg5:after {border-color: transparent #262626 transparent transparent;}
+.quatro .seg6:before {border-color: transparent #262626 transparent transparent;}
+.quatro .seg6:after {border-color: transparent transparent transparent #262626;}
 
 /* Digito cinco */
-.cinco .d1 {background-color: #262A34;}
-.cinco .d2 {background-color: #262A34;}
-.cinco .d5 {background-color: #262A34;}
-.cinco .d6 {background-color: #262A34;}
-.cinco .d7 {background-color: #262A34;}
-.cinco .d1:before {border-color: transparent  #262626 transparent transparent;}
-.cinco .d1:after {border-color: #262626 transparent transparent transparent;}
-.cinco .d2:before {border-color: transparent transparent transparent #262626 ;}
-.cinco .d2:after {border-color: #262626 transparent transparent transparent;}
-.cinco .d5:before {border-color: transparent transparent #262626 transparent;}
-.cinco .d5:after {border-color: transparent #262626 transparent transparent;}
-.cinco .d6:before {border-color: transparent #262626 transparent transparent;}
-.cinco .d6:after {border-color: transparent transparent transparent #262626;}
-.cinco .d7:before {border-color: transparent transparent #262626 transparent;}
-.cinco .d7:after {border-color: transparent transparent transparent #262626;}
+.cinco .seg1 {background-color: #262A34;}
+.cinco .seg2 {background-color: #262A34;}
+.cinco .seg5 {background-color: #262A34;}
+.cinco .seg6 {background-color: #262A34;}
+.cinco .seg7 {background-color: #262A34;}
+.cinco .seg1:before {border-color: transparent  #262626 transparent transparent;}
+.cinco .seg1:after {border-color: #262626 transparent transparent transparent;}
+.cinco .seg2:before {border-color: transparent transparent transparent #262626 ;}
+.cinco .seg2:after {border-color: #262626 transparent transparent transparent;}
+.cinco .seg5:before {border-color: transparent transparent #262626 transparent;}
+.cinco .seg5:after {border-color: transparent #262626 transparent transparent;}
+.cinco .seg6:before {border-color: transparent #262626 transparent transparent;}
+.cinco .seg6:after {border-color: transparent transparent transparent #262626;}
+.cinco .seg7:before {border-color: transparent transparent #262626 transparent;}
+.cinco .seg7:after {border-color: transparent transparent transparent #262626;}
 
 /* Digito seis */
-.seis .d2 {background-color: #262A34;}
-.seis .d4 {background-color: #262A34;}
-.seis .d5 {background-color: #262A34;}
-.seis .d6 {background-color: #262A34;}
-.seis .d7 {background-color: #262A34;}
-.seis .d2:before {border-color: transparent transparent transparent #262626 ;}
-.seis .d2:after {border-color: #262626 transparent transparent transparent;}
-.seis .d4:before {border-color: transparent transparent transparent #262626;}
-.seis .d4:after {border-color: #262626 transparent transparent transparent;}
-.seis .d5:before {border-color: transparent transparent #262626 transparent;}
-.seis .d5:after {border-color: transparent #262626 transparent transparent;}
-.seis .d6:before {border-color: transparent #262626 transparent transparent;}
-.seis .d6:after {border-color: transparent transparent transparent #262626;}
-.seis .d7:before {border-color: transparent transparent #262626 transparent;}
-.seis .d7:after {border-color: transparent transparent transparent #262626;}
+.seis .seg1 {background-color: #262A34;}
+.seis .seg2 {background-color: #262A34;}
+.seis .seg4 {background-color: #262A34;}
+.seis .seg5 {background-color: #262A34;}
+.seis .seg6 {background-color: #262A34;}
+.seis .seg7 {background-color: #262A34;}
+.seis .seg1:before {border-color: transparent  #262626 transparent transparent;}
+.seis .seg1:after {border-color: #262626 transparent transparent transparent;}
+.seis .seg2:before {border-color: transparent transparent transparent #262626 ;}
+.seis .seg2:after {border-color: #262626 transparent transparent transparent;}
+.seis .seg4:before {border-color: transparent transparent transparent #262626;}
+.seis .seg4:after {border-color: #262626 transparent transparent transparent;}
+.seis .seg5:before {border-color: transparent transparent #262626 transparent;}
+.seis .seg5:after {border-color: transparent #262626 transparent transparent;}
+.seis .seg6:before {border-color: transparent #262626 transparent transparent;}
+.seis .seg6:after {border-color: transparent transparent transparent #262626;}
+.seis .seg7:before {border-color: transparent transparent #262626 transparent;}
+.seis .seg7:after {border-color: transparent transparent transparent #262626;}
 
 /* Digito sete */
-.sete .d1 {background-color: #262A34;}
-.sete .d3 {background-color: #262A34;}
-.sete .d5 {background-color: #262A34;}
-.sete .d1:before {border-color: transparent  #262626 transparent transparent;}
-.sete .d1:after {border-color: #262626 transparent transparent transparent;}
-.sete .d3:before {border-color: transparent transparent #262626 transparent;}
-.sete .d3:after {border-color: transparent #262626 transparent transparent;}
-.sete .d5:before {border-color: transparent transparent #262626 transparent;}
-.sete .d5:after {border-color: transparent #262626 transparent transparent;}
+.sete .seg1 {background-color: #262A34;}
+.sete .seg3 {background-color: #262A34;}
+.sete .seg5 {background-color: #262A34;}
+.sete .seg1:before {border-color: transparent  #262626 transparent transparent;}
+.sete .seg1:after {border-color: #262626 transparent transparent transparent;}
+.sete .seg3:before {border-color: transparent transparent #262626 transparent;}
+.sete .seg3:after {border-color: transparent #262626 transparent transparent;}
+.sete .seg5:before {border-color: transparent transparent #262626 transparent;}
+.sete .seg5:after {border-color: transparent #262626 transparent transparent;}
 
 /* Digito oito */
-.oito .d1 {background-color: #262A34;}
-.oito .d2 {background-color: #262A34;}
-.oito .d3 {background-color: #262A34;}
-.oito .d4 {background-color: #262A34;}
-.oito .d5 {background-color: #262A34;}
-.oito .d6 {background-color: #262A34;}
-.oito .d7 {background-color: #262A34;}
-.oito .d1:before {border-color: transparent #262626 transparent transparent;}
-.oito .d1:after {border-color: #262626 transparent transparent transparent;}
-.oito .d2:before {border-color: transparent transparent transparent #262626 ;}
-.oito .d2:after {border-color: #262626 transparent transparent transparent;}
-.oito .d3:before {border-color: transparent transparent #262626 transparent;}
-.oito .d3:after {border-color: transparent #262626 transparent transparent;}
-.oito .d4:before {border-color: transparent transparent transparent #262626;}
-.oito .d4:after {border-color: #262626 transparent transparent transparent;}
-.oito .d5:before {border-color: transparent transparent #262626 transparent;}
-.oito .d5:after {border-color: transparent #262626 transparent transparent;}
-.oito .d6:before {border-color: transparent #262626 transparent transparent;}
-.oito .d6:after {border-color: transparent transparent transparent #262626;}
-.oito .d7:before {border-color: transparent transparent #262626 transparent;}
-.oito .d7:after {border-color: transparent transparent transparent #262626;}
+.oito .seg1 {background-color: #262A34;}
+.oito .seg2 {background-color: #262A34;}
+.oito .seg3 {background-color: #262A34;}
+.oito .seg4 {background-color: #262A34;}
+.oito .seg5 {background-color: #262A34;}
+.oito .seg6 {background-color: #262A34;}
+.oito .seg7 {background-color: #262A34;}
+.oito .seg1:before {border-color: transparent #262626 transparent transparent;}
+.oito .seg1:after {border-color: #262626 transparent transparent transparent;}
+.oito .seg2:before {border-color: transparent transparent transparent #262626 ;}
+.oito .seg2:after {border-color: #262626 transparent transparent transparent;}
+.oito .seg3:before {border-color: transparent transparent #262626 transparent;}
+.oito .seg3:after {border-color: transparent #262626 transparent transparent;}
+.oito .seg4:before {border-color: transparent transparent transparent #262626;}
+.oito .seg4:after {border-color: #262626 transparent transparent transparent;}
+.oito .seg5:before {border-color: transparent transparent #262626 transparent;}
+.oito .seg5:after {border-color: transparent #262626 transparent transparent;}
+.oito .seg6:before {border-color: transparent #262626 transparent transparent;}
+.oito .seg6:after {border-color: transparent transparent transparent #262626;}
+.oito .seg7:before {border-color: transparent transparent #262626 transparent;}
+.oito .seg7:after {border-color: transparent transparent transparent #262626;}
 
 /* Digito nove */
-.nove .d1 {background-color: #262A34;}
-.nove .d2 {background-color: #262A34;}
-.nove .d3 {background-color: #262A34;}
-.nove .d5 {background-color: #262A34;}
-.nove .d6 {background-color: #262A34;}
-.nove .d1:before {border-color: transparent #262626 transparent transparent;}
-.nove .d1:after {border-color: #262626 transparent transparent transparent;}
-.nove .d2:before {border-color: transparent transparent transparent #262626 ;}
-.nove .d2:after {border-color: #262626 transparent transparent transparent;}
-.nove .d3:before {border-color: transparent transparent #262626 transparent;}
-.nove .d3:after {border-color: transparent #262626 transparent transparent;}
-.nove .d5:before {border-color: transparent transparent #262626 transparent;}
-.nove .d5:after {border-color: transparent #262626 transparent transparent;}
-.nove .d6:before {border-color: transparent #262626 transparent transparent;}
-.nove .d6:after {border-color: transparent transparent transparent #262626;}
+.nove .seg1 {background-color: #262A34;}
+.nove .seg2 {background-color: #262A34;}
+.nove .seg3 {background-color: #262A34;}
+.nove .seg5 {background-color: #262A34;}
+.nove .seg6 {background-color: #262A34;}
+.nove .seg1:before {border-color: transparent #262626 transparent transparent;}
+.nove .seg1:after {border-color: #262626 transparent transparent transparent;}
+.nove .seg2:before {border-color: transparent transparent transparent #262626 ;}
+.nove .seg2:after {border-color: #262626 transparent transparent transparent;}
+.nove .seg3:before {border-color: transparent transparent #262626 transparent;}
+.nove .seg3:after {border-color: transparent #262626 transparent transparent;}
+.nove .seg5:before {border-color: transparent transparent #262626 transparent;}
+.nove .seg5:after {border-color: transparent #262626 transparent transparent;}
+.nove .seg6:before {border-color: transparent #262626 transparent transparent;}
+.nove .seg6:after {border-color: transparent transparent transparent #262626;}

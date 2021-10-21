@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Qual é o número?</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/d7248bd982.js"></script>
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -22,22 +23,43 @@
         <div class="mensagem">
             <h2 id="resultado"></h2>
         </div>
-        <div class="campo">
-            <div id="digitos" class="digitos">
-                <div class="d1"></div>
-                <div class="d2"></div>
-                <div class="d3"></div>
-                <div class="d4"></div>
-                <div class="d5"></div>
-                <div class="d6"></div>
-                <div class="d7"></div>
+        <div class="digito">
+            <div id="segmentos-1" class="segmentos">
+                <div class="seg1"></div>
+                <div class="seg2"></div>
+                <div class="seg3"></div>
+                <div class="seg4"></div>
+                <div class="seg5"></div>
+                <div class="seg6"></div>
+                <div class="seg7"></div>
             </div>
+            <div id="segmentos-2" class="segmentos">
+                <div class="seg1"></div>
+                <div class="seg2"></div>
+                <div class="seg3"></div>
+                <div class="seg4"></div>
+                <div class="seg5"></div>
+                <div class="seg6"></div>
+                <div class="seg7"></div>
+            </div>
+            <div id="segmentos-3" class="segmentos">
+                <div class="seg1"></div>
+                <div class="seg2"></div>
+                <div class="seg3"></div>
+                <div class="seg4"></div>
+                <div class="seg5"></div>
+                <div class="seg6"></div>
+                <div class="seg7"></div>
+            </div>
+        </div>
+        <div class="refresh">
+            <button type="button" class="novaPartida" onClick="window.location.reload()">nova partida</button>
         </div>
     </div>
     <div class="formulario">
         <form>
-            <input type="text" autofocus="autofocus" placeholder="Digite o palpite" name="palpite" id="palpite" autocomplete="off">
-            <button type="button" onclick="jogar(), mudarDigito()">Enviar</button>
+            <input name="palpite" id="palpite" type="number" placeholder="Digite o palpite" autofocus="autofocus" autocomplete="off">
+            <button type="button" onclick="jogar(), mudarDigito(), teste(), limparInput()">Enviar</button>
         </form>
     </div>
     <script src="js/script.js"></script>

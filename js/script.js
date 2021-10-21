@@ -8,7 +8,6 @@ function fazerGet(url) {
 
 const json = (fazerGet("https://us-central1-ss-devops.cloudfunctions.net/rand?min=1&max=300"));
 
-
 /*Função que compara o palpite com o valore aleatório recebido na requisição*/
 function jogar() {
 
@@ -16,9 +15,8 @@ function jogar() {
     
     data = JSON.parse(json);
     var resposta = data.value;
+    console.log(resposta); /*para debugar*/
 
-    console.log(resposta);
-        
         if(palpite > resposta) {
             document.getElementById("resultado").innerHTML = "É maior";
         }
@@ -32,39 +30,174 @@ function jogar() {
 
 /*Função para adicionar classe mudando o algarismo no mostrador de led*/
 function mudarDigito() {
-    const element = document.querySelector("#digitos");
+    var element1 = document.querySelector("#segmentos-1");
     var palpite = document.getElementById("palpite").value;
 
-    switch(palpite) {
+    switch(palpite.charAt(0)) {
+
+        /* primeiro digito */
+
         case "0":
-            element.classList.add("zero")
+            element1.classList.remove(...element1.classList);
+            element1.classList.add("segmentos","zero");
             break;
         case "1":
-            element.classList.add("um")
+            element1.classList.remove(...element1.classList);
+            element1.classList.add("segmentos","um");
             break;
         case "2":
-        element.classList.add("dois")
+            element1.classList.remove(...element1.classList);
+            element1.classList.add("segmentos","dois");
             break;
         case "3":
-            element.classList.add("tres")
+            element1.classList.remove(...element1.classList);
+            element1.classList.add("segmentos","tres");
             break;
         case "4":
-            element.classList.add("quatro")
+            element1.classList.remove(...element1.classList);
+            element1.classList.add("segmentos","quatro");
             break;
         case "5":
-            element.classList.add("cinco")
+            element1.classList.remove(...element1.classList);
+            element1.classList.add("segmentos","cinco");
             break;
         case "6":
-            element.classList.add("seis")
+            element1.classList.remove(...element1.classList);
+            element1.classList.add("segmentos","seis");
             break;
         case "7":
-            element.classList.add("sete")
+            element1.classList.remove(...element1.classList);
+            element1.classList.add("segmentos","sete");
             break;
         case "8":
-            element.classList.add("oito")
+            element1.classList.remove(...element1.classList);
+            element1.classList.add("segmentos","oito");
             break;
         case "9":
-            element.classList.add("nove")
+            element1.classList.remove(...element1.classList);
+            element1.classList.add("segmentos","nove");
+            break;
+    }
+    
+    /* segundo digito */
+
+    var element2 = document.querySelector("#segmentos-2");
+    var palpite = document.getElementById("palpite").value;
+
+    switch(palpite.charAt(1)) {
+        case "0":
+            element2.classList.remove(...element2.classList);
+            element2.classList.add("segmentos","zero");
+            break;
+        case "1":
+            element2.classList.remove(...element2.classList);
+            element2.classList.add("segmentos","um");
+            break;
+        case "2":
+            element2.classList.remove(...element2.classList);
+            element2.classList.add("segmentos","dois");
+            break;
+        case "3":
+            element2.classList.remove(...element2.classList);
+            element2.classList.add("segmentos","tres");
+            break;
+        case "4":
+            element2.classList.remove(...element2.classList);
+            element2.classList.add("segmentos","quatro");
+            break;
+        case "5":
+            element2.classList.remove(...element2.classList);
+            element2.classList.add("segmentos","cinco");
+            break;
+        case "6":
+            element2.classList.remove(...element2.classList);
+            element2.classList.add("segmentos","seis");
+            break;
+        case "7":
+            element2.classList.remove(...element2.classList);
+            element2.classList.add("segmentos","sete");
+            break;
+        case "8":
+            element2.classList.remove(...element2.classList);
+            element2.classList.add("segmentos","oito");
+            break;
+        case "9":
+            element2.classList.remove(...element2.classList);
+            element2.classList.add("segmentos","nove");
+            break;
+    }
+
+    /* terceiro digito */
+
+    var element3 = document.querySelector("#segmentos-3");
+    var palpite = document.getElementById("palpite").value;
+
+    switch(palpite.charAt(2)) {
+        case "0":
+            element3.classList.remove(...element3.classList);
+            element3.classList.add("segmentos","zero");
+            break;
+        case "1":
+            element3.classList.remove(...element3.classList);
+            element3.classList.add("segmentos","um");
+            break;
+        case "2":
+            element3.classList.remove(...element3.classList);
+            element3.classList.add("segmentos","dois");
+            break;
+        case "3":
+            element3.classList.remove(...element3.classList);
+            element3.classList.add("segmentos","tres");
+            break;
+        case "4":
+            element3.classList.remove(...element3.classList);
+            element3.classList.add("segmentos","quatro");
+            break;
+        case "5":
+            element3.classList.remove(...element3.classList);
+            element3.classList.add("segmentos","cinco");
+            break;
+        case "6":
+            element3.classList.remove(...element3.classList);
+            element3.classList.add("segmentos","seis");
+            break;
+        case "7":
+            element3.classList.remove(...element3.classList);
+            element3.classList.add("segmentos","sete");
+            break;
+        case "8":
+            element3.classList.remove(...element3.classList);
+            element3.classList.add("segmentos","oito");
+            break;
+        case "9":
+            element3.classList.remove(...element3.classList);
+            element3.classList.add("segmentos","nove");
             break;
     }
 }
+
+function limparInput(){
+    document.getElementById("palpite").value = "";
+}
+
+function teste(){
+    var palpite = document.getElementById("palpite").value;
+    var digito2 = document.getElementById("segmentos-2");
+    var digito3 = document.getElementById("segmentos-3");
+    var tamanho = palpite.length;
+
+    if (tamanho == 2){
+        digito2.style.display = "inline-block";
+        digito3.style.display = "none";
+    }
+    else if (tamanho == 3) {
+        digito2.style.display = "inline-block";
+        digito3.style.display = "inline-block";
+    }
+
+    else if (tamanho == 1) {
+        digito2.style.display = "none";
+        digito3.style.display = "none";
+    }
+}
+
