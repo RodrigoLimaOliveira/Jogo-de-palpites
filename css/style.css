@@ -32,7 +32,7 @@ h1 {
     font-size: 24px;
     line-height: 29px;
     letter-spacing: -1px;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color:#EF6C00;
 }
 
@@ -88,9 +88,14 @@ hr {
     width: 130px;
     height: 42px;
     border-radius: 4px;
-    color:#FFFFFF;
+    color: #FFFFFF;
     background: linear-gradient(180deg, #434854 0%, #9E9E9E 100%);
     border: none;
+    visibility: hidden;
+}
+
+.novaPartida span {
+    margin-right: 10px;
 }
 
 .formulario {
@@ -538,3 +543,98 @@ hr {
 .nove .seg5:after {border-color: transparent #262626 transparent transparent;}
 .nove .seg6:before {border-color: transparent #262626 transparent transparent;}
 .nove .seg6:after {border-color: transparent transparent transparent #262626;}
+
+/* responsividade */
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0px;
+	position: relative;
+}
+
+.container:after, .container:before {
+	content: " ";
+	display: table;
+}
+
+.container:after {
+	clear: both;
+}
+/* Desktop e tablet */
+@media only screen and (min-width: 768px){ 
+
+.container {
+		width: 768px;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 43,88px;
+}
+
+hr {
+    width: 250px;
+}
+
+.segmentos {
+    width: 70px;
+    height: 148px;
+}
+
+/*seg1*/
+.seg1 {
+    left: 10px;
+    width: 50px;
+    height: 10px;
+}
+
+/*seg2*/
+.seg2 {
+    top: 3px;
+    height: 50px;
+}
+
+/*seg3*/
+.seg3 {
+    left: 60px;
+    bottom: 47px;
+    height: 50px;
+}
+
+/*seg4*/
+.seg4 {
+    bottom: 25px;
+    height: 50px;
+}
+
+/*seg5*/
+.seg5 {
+    left: 60px;
+    bottom: 74px;
+    height: 50px;
+}
+
+/*seg6*/
+.seg6 {
+    bottom: 141px;
+    width: 50px;
+}
+
+/*seg7*/
+.seg7 {
+    bottom: 82px;
+    left: 10px;
+    width: 50px; 
+}
+
+}
+/*smartphone*/
+
+@media only screen and (max-width: 767px) {
+
+.container {
+	width: 300px;
+}
+
+}

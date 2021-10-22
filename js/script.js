@@ -12,20 +12,26 @@ const json = (fazerGet("https://us-central1-ss-devops.cloudfunctions.net/rand?mi
 function jogar() {
 
     var palpite = document.getElementById("palpite").value;
+    var btnJogar = document.getElementById("btnJogar");
     
-    data = JSON.parse(json);
+    var data = JSON.parse(json);
     var resposta = data.value;
+
     console.log(resposta); /*para debugar*/
 
-        if(palpite > resposta) {
-            document.getElementById("resultado").innerHTML = "É maior";
-        }
-        else if (palpite < resposta) {
-            document.getElementById("resultado").innerHTML = "É menor";
-        }
-        else {
-            document.getElementById("resultado").innerHTML = "Você acertou!!!!";
-        }
+    if(palpite > resposta) {
+        document.getElementById("resultado").innerHTML = "É maior";
+    }
+    else if (palpite < resposta) {
+        document.getElementById("resultado").innerHTML = "É menor";
+    }
+    else if (palpite == resposta) {
+        document.getElementById("resultado").innerHTML = "Você acertou!!!!";
+        document.getElementById("novaPartida").style.visibility = "visible"
+        document.getElementById("palpite").disabled = true;
+        btnJogar.disabled = true;
+        btnJogar.style.background = "#DDDDDD";
+    }
 }
 
 /*Função para adicionar classe mudando o algarismo no mostrador de led*/
@@ -180,7 +186,9 @@ function limparInput(){
     document.getElementById("palpite").value = "";
 }
 
-function teste(){
+/* apagar os digitos não usados */
+
+function apagarDigito(){
     var palpite = document.getElementById("palpite").value;
     var digito2 = document.getElementById("segmentos-2");
     var digito3 = document.getElementById("segmentos-3");
@@ -200,4 +208,3 @@ function teste(){
         digito3.style.display = "none";
     }
 }
-

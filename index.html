@@ -10,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://use.fontawesome.com/d7248bd982.js"></script>
-    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <h1>Qual é o número?</h1>
         <hr>
     </header>
-    <div class="principal container">
+    <div class="container" id="principal">
         <div class="mensagem">
             <h2 id="resultado"></h2>
         </div>
@@ -53,15 +54,14 @@
             </div>
         </div>
         <div class="refresh">
-            <button type="button" class="novaPartida" onClick="window.location.reload()">nova partida</button>
+            <button type="button" class="novaPartida" id="novaPartida" onClick="window.location.reload()"><span><i class="fas fa-redo"></i></span>nova partida</button>
         </div>
     </div>
     <div class="formulario">
         <form>
-            <input name="palpite" id="palpite" type="number" placeholder="Digite o palpite" autofocus="autofocus" autocomplete="off">
-            <button type="button" onclick="jogar(), mudarDigito(), teste(), limparInput()">Enviar</button>
+            <input name="palpite" id="palpite" type="number" placeholder="Digite o palpite" autofocus="autofocus" autocomplete="off" required>
+            <button type="button" id="btnJogar" onclick="jogar(), mudarDigito(), apagarDigito(), limparInput()">Enviar</button>
         </form>
     </div>
-    <script src="js/script.js"></script>
 </body>
 </html>
