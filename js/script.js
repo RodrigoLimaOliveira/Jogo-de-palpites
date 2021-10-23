@@ -15,7 +15,7 @@ const json = (fazerGet("https://us-central1-ss-devops.cloudfunctions.net/rand?mi
 var resposta = JSON.parse(json.responseText).value;
 var statusCode = json.status;
 
-/*Função que compara o palpite com o valore aleatório recebido na requisição*/
+/*Função que compara o palpite com o valor aleatório recebido na requisição*/
 function jogar() {
     var palpite = document.getElementById("palpite").value;
     var btnJogar = document.getElementById("btnJogar");
@@ -63,7 +63,7 @@ function jogar() {
     }
 }
 
-/*Função para adicionar classe mudando o algarismo no mostrador de led*/
+/*Função para adicionar uma classe mudando o css do algarismo no mostrador de led*/
 function mudarDigito() {
     
     /* primeiro digito */
@@ -208,6 +208,7 @@ function mudarDigito() {
     }
 }
 
+/*Função para adicionar uma classe mudando o css do algarismo no mostrador de led*/
 function mudarDigitoVerde() {
     
     /* primeiro digito */
@@ -351,7 +352,7 @@ function mudarDigitoVerde() {
             break;
     }
 }
-
+/*Função para adicionar uma classe mudando o css do algarismo no mostrador de led*/
 function mudarDigitoVermelho() {
     
     /* primeiro digito */
@@ -499,7 +500,7 @@ function limparInput(){
     document.getElementById("palpite").value = "";
 }
 
-/* apagar os digitos não usados */
+/* Verifica quantos caracteres tem na string e mostra a quantidade de digitos correspondentes no led  */
 
 function apagarDigito(){
     /* verifica tamanho da string e remove os digitos não usados*/
