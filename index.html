@@ -54,14 +54,12 @@
             </div>
         </div>
         <div class="refresh">
-            <button type="button" class="novaPartida" id="novaPartida" onClick="window.location.reload()"><span><i class="fas fa-redo"></i></span>nova partida</button>
+            <button type="button" class="novaPartida" id="novaPartida" onClick="window.location.reload()" value=""><span><i class="fas fa-redo"></i></span>nova partida</button>
         </div>
     </div>
     <div class="formulario">
-        <form>
-            <input name="palpite" id="palpite" type="number" placeholder="Digite o palpite" autofocus="autofocus" autocomplete="off" required>
-            <button type="button" id="btnJogar" onclick="jogar(), mudarDigito(), apagarDigito(), limparInput()">Enviar</button>
-        </form>
+        <input name="palpite" id="palpite" type="number" placeholder="Digite o palpite" autofocus="autofocus" autocomplete="off" required>
+        <button type="button" id="btnJogar" onclick="main()">Enviar</button>
     </div>
 </body>
 </html>

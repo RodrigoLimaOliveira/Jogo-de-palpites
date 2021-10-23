@@ -400,6 +400,46 @@ hr {
 .zero .seg7:before {border-color: transparent transparent #262626 transparent;}
 .zero .seg7:after {border-color: transparent transparent transparent #262626;}
 
+/* Digito zeroRed */
+.zeroRed .seg1 {background-color: #CC3300;}
+.zeroRed .seg2 {background-color: #CC3300;}
+.zeroRed .seg3 {background-color: #CC3300;}
+.zeroRed .seg4 {background-color: #CC3300;}
+.zeroRed .seg5 {background-color: #CC3300;}
+.zeroRed .seg7 {background-color: #CC3300;}
+.zeroRed .seg1:before {border-color: transparent #CC3300 transparent transparent;}
+.zeroRed .seg1:after {border-color: #CC3300 transparent transparent transparent;}
+.zeroRed .seg2:before {border-color: transparent transparent transparent #CC3300;}
+.zeroRed .seg2:after {border-color: #CC3300 transparent transparent transparent;}
+.zeroRed .seg3:before {border-color: transparent transparent #CC3300 transparent;}
+.zeroRed .seg3:after {border-color: transparent #CC3300 transparent transparent;}
+.zeroRed .seg4:before {border-color: transparent transparent transparent #CC3300;}
+.zeroRed .seg4:after {border-color: #CC3300 transparent transparent transparent;}
+.zeroRed .seg5:before {border-color: transparent transparent #CC3300 transparent;}
+.zeroRed .seg5:after {border-color: transparent #CC3300 transparent transparent;}
+.zeroRed .seg7:before {border-color: transparent transparent #CC3300 transparent;}
+.zeroRed .seg7:after {border-color: transparent transparent transparent #CC3300;}
+
+/* Digito zeroGreen */
+.zeroGreen .seg1 {background-color: #32BF00;}
+.zeroGreen .seg2 {background-color: #32BF00;}
+.zeroGreen .seg3 {background-color: #32BF00;}
+.zeroGreen .seg4 {background-color: #32BF00;}
+.zeroGreen .seg5 {background-color: #32BF00;}
+.zeroGreen .seg7 {background-color: #32BF00;}
+.zeroGreen .seg1:before {border-color: transparent #32BF00 transparent transparent;}
+.zeroGreen .seg1:after {border-color: #32BF00 transparent transparent transparent;}
+.zeroGreen .seg2:before {border-color: transparent transparent transparent #32BF00;}
+.zeroGreen .seg2:after {border-color: #32BF00 transparent transparent transparent;}
+.zeroGreen .seg3:before {border-color: transparent transparent #32BF00 transparent;}
+.zeroGreen .seg3:after {border-color: transparent #32BF00 transparent transparent;}
+.zeroGreen .seg4:before {border-color: transparent transparent transparent #32BF00;}
+.zeroGreen .seg4:after {border-color: #32BF00 transparent transparent transparent;}
+.zeroGreen .seg5:before {border-color: transparent transparent #32BF00 transparent;}
+.zeroGreen .seg5:after {border-color: transparent #32BF00 transparent transparent;}
+.zeroGreen .seg7:before {border-color: transparent transparent #32BF00 transparent;}
+.zeroGreen .seg7:after {border-color: transparent transparent transparent #32BF00;}
+
 /* Digito um */
 .um .seg3 {background-color: #262A34;}
 .um .seg5 {background-color: #262A34;}
@@ -408,13 +448,29 @@ hr {
 .um .seg5:before {border-color: transparent transparent #262626 transparent;}
 .um .seg5:after {border-color: transparent #262626 transparent transparent;}
 
+/* Digito umRed */
+.umRed .seg3 {background-color: #CC3300;}
+.umRed .seg5 {background-color: #CC3300;}
+.umRed .seg3:before {border-color: transparent transparent #CC3300 transparent;}
+.umRed .seg3:after {border-color: transparent #CC3300 transparent transparent;}
+.umRed .seg5:before {border-color: transparent transparent #CC3300 transparent;}
+.umRed .seg5:after {border-color: transparent #CC3300 transparent transparent;}
+
+/* Digito umGreen */
+.umGreen .seg3 {background-color: #32BF00;}
+.umGreen .seg5 {background-color: #32BF00;}
+.umGreen .seg3:before {border-color: transparent transparent #32BF00 transparent;}
+.umGreen .seg3:after {border-color: transparent #32BF00 transparent transparent;}
+.umGreen .seg5:before {border-color: transparent transparent #32BF00 transparent;}
+.umGreen .seg5:after {border-color: transparent #32BF00 transparent transparent;}
+
 /* Digito dois */
 .dois .seg1 {background-color: #262A34;}
 .dois .seg3 {background-color: #262A34;}
 .dois .seg6 {background-color: #262A34;}
 .dois .seg4 {background-color: #262A34;}
 .dois .seg7 {background-color: #262A34;}
-.dois .seg1:before {border-color: transparent  #262626 transparent transparent;}
+.dois .seg1:before {border-color: transparent #262626 transparent transparent;}
 .dois .seg1:after {border-color: #262626 transparent transparent transparent;}
 .dois .seg3:before {border-color: transparent transparent #262626 transparent;}
 .dois .seg3:after {border-color: transparent #262626 transparent transparent;}
@@ -425,13 +481,47 @@ hr {
 .dois .seg7:before {border-color: transparent transparent #262626 transparent;}
 .dois .seg7:after {border-color: transparent transparent transparent #262626;}
 
+/* Digito doisRed */
+.doisRed .seg1 {background-color: #CC3300;}
+.doisRed .seg3 {background-color: #CC3300;}
+.doisRed .seg6 {background-color: #CC3300;}
+.doisRed .seg4 {background-color: #CC3300;}
+.doisRed .seg7 {background-color: #CC3300;}
+.doisRed .seg1:before {border-color: transparent #CC3300 transparent transparent;}
+.doisRed .seg1:after {border-color: #CC3300 transparent transparent transparent;}
+.doisRed .seg3:before {border-color: transparent transparent #CC3300 transparent;}
+.doisRed .seg3:after {border-color: transparent #CC3300 transparent transparent;}
+.doisRed .seg6:before {border-color: transparent #CC3300 transparent transparent;}
+.doisRed .seg6:after {border-color: transparent transparent transparent #CC3300;}
+.doisRed .seg4:before {border-color: transparent transparent transparent #CC3300;}
+.doisRed .seg4:after {border-color: #CC3300 transparent transparent transparent;}
+.doisRed .seg7:before {border-color: transparent transparent #CC3300 transparent;}
+.doisRed .seg7:after {border-color: transparent transparent transparent #CC3300;}
+
+/* Digito doisGreen */
+.doisGreen .seg1 {background-color: #32BF00;}
+.doisGreen .seg3 {background-color: #32BF00;}
+.doisGreen .seg6 {background-color: #32BF00;}
+.doisGreen .seg4 {background-color: #32BF00;}
+.doisGreen .seg7 {background-color: #32BF00;}
+.doisGreen .seg1:before {border-color: transparent #32BF00 transparent transparent;}
+.doisGreen .seg1:after {border-color: #32BF00 transparent transparent transparent;}
+.doisGreen .seg3:before {border-color: transparent transparent #32BF00 transparent;}
+.doisGreen .seg3:after {border-color: transparent #32BF00 transparent transparent;}
+.doisGreen .seg6:before {border-color: transparent #32BF00 transparent transparent;}
+.doisGreen .seg6:after {border-color: transparent transparent transparent #32BF00;}
+.doisGreen .seg4:before {border-color: transparent transparent transparent #32BF00;}
+.doisGreen .seg4:after {border-color: #32BF00 transparent transparent transparent;}
+.doisGreen .seg7:before {border-color: transparent transparent #32BF00 transparent;}
+.doisGreen .seg7:after {border-color: transparent transparent transparent #32BF00;}
+
 /* Digito tres */
 .tres .seg1 {background-color: #262A34;}
 .tres .seg3 {background-color: #262A34;}
 .tres .seg5 {background-color: #262A34;}
 .tres .seg6 {background-color: #262A34;}
 .tres .seg7 {background-color: #262A34;}
-.tres .seg1:before {border-color: transparent  #262626 transparent transparent;}
+.tres .seg1:before {border-color: transparent #262626 transparent transparent;}
 .tres .seg1:after {border-color: #262626 transparent transparent transparent;}
 .tres .seg3:before {border-color: transparent transparent #262626 transparent;}
 .tres .seg3:after {border-color: transparent #262626 transparent transparent;}
@@ -441,6 +531,40 @@ hr {
 .tres .seg6:after {border-color: transparent transparent transparent #262626;}
 .tres .seg7:before {border-color: transparent transparent #262626 transparent;}
 .tres .seg7:after {border-color: transparent transparent transparent #262626;}
+
+/* Digito tresRed */
+.tresRed .seg1 {background-color: #CC3300;}
+.tresRed .seg3 {background-color: #CC3300;}
+.tresRed .seg5 {background-color: #CC3300;}
+.tresRed .seg6 {background-color: #CC3300;}
+.tresRed .seg7 {background-color: #CC3300;}
+.tresRed .seg1:before {border-color: transparent #CC3300 transparent transparent;}
+.tresRed .seg1:after {border-color: #CC3300 transparent transparent transparent;}
+.tresRed .seg3:before {border-color: transparent transparent #CC3300 transparent;}
+.tresRed .seg3:after {border-color: transparent #CC3300 transparent transparent;}
+.tresRed .seg5:before {border-color: transparent transparent #CC3300 transparent;}
+.tresRed .seg5:after {border-color: transparent #CC3300 transparent transparent;}
+.tresRed .seg6:before {border-color: transparent #CC3300 transparent transparent;}
+.tresRed .seg6:after {border-color: transparent transparent transparent #CC3300;}
+.tresRed .seg7:before {border-color: transparent transparent #CC3300 transparent;}
+.tresRed .seg7:after {border-color: transparent transparent transparent #CC3300;}
+
+/* Digito tresGreen */
+.tresGreen .seg1 {background-color: #32BF00;}
+.tresGreen .seg3 {background-color: #32BF00;}
+.tresGreen .seg5 {background-color: #32BF00;}
+.tresGreen .seg6 {background-color: #32BF00;}
+.tresGreen .seg7 {background-color: #32BF00;}
+.tresGreen .seg1:before {border-color: transparent #32BF00 transparent transparent;}
+.tresGreen .seg1:after {border-color: #32BF00 transparent transparent transparent;}
+.tresGreen .seg3:before {border-color: transparent transparent #32BF00 transparent;}
+.tresGreen .seg3:after {border-color: transparent #32BF00 transparent transparent;}
+.tresGreen .seg5:before {border-color: transparent transparent #32BF00 transparent;}
+.tresGreen .seg5:after {border-color: transparent #32BF00 transparent transparent;}
+.tresGreen .seg6:before {border-color: transparent #32BF00 transparent transparent;}
+.tresGreen .seg6:after {border-color: transparent transparent transparent #32BF00;}
+.tresGreen .seg7:before {border-color: transparent transparent #32BF00 transparent;}
+.tresGreen .seg7:after {border-color: transparent transparent transparent #32BF00;}
 
 /* Digito quatro */
 .quatro .seg2 {background-color: #262A34;}
@@ -456,13 +580,41 @@ hr {
 .quatro .seg6:before {border-color: transparent #262626 transparent transparent;}
 .quatro .seg6:after {border-color: transparent transparent transparent #262626;}
 
+/* Digito quatroRed */
+.quatroRed .seg2 {background-color: #CC3300;}
+.quatroRed .seg3 {background-color: #CC3300;}
+.quatroRed .seg5 {background-color: #CC3300;}
+.quatroRed .seg6 {background-color: #CC3300;}
+.quatroRed .seg2:before {border-color: transparent transparent transparent #CC3300 ;}
+.quatroRed .seg2:after {border-color: #CC3300 transparent transparent transparent;}
+.quatroRed .seg3:before {border-color: transparent transparent #CC3300 transparent;}
+.quatroRed .seg3:after {border-color: transparent #CC3300 transparent transparent;}
+.quatroRed .seg5:before {border-color: transparent transparent #CC3300 transparent;}
+.quatroRed .seg5:after {border-color: transparent #CC3300 transparent transparent;}
+.quatroRed .seg6:before {border-color: transparent #CC3300 transparent transparent;}
+.quatroRed .seg6:after {border-color: transparent transparent transparent #CC3300;}
+
+/* Digito quatroGreen */
+.quatroGreen .seg2 {background-color: #32BF00;}
+.quatroGreen .seg3 {background-color: #32BF00;}
+.quatroGreen .seg5 {background-color: #32BF00;}
+.quatroGreen .seg6 {background-color: #32BF00;}
+.quatroGreen .seg2:before {border-color: transparent transparent transparent #32BF00 ;}
+.quatroGreen .seg2:after {border-color: #32BF00 transparent transparent transparent;}
+.quatroGreen .seg3:before {border-color: transparent transparent #32BF00 transparent;}
+.quatroGreen .seg3:after {border-color: transparent #32BF00 transparent transparent;}
+.quatroGreen .seg5:before {border-color: transparent transparent #32BF00 transparent;}
+.quatroGreen .seg5:after {border-color: transparent #32BF00 transparent transparent;}
+.quatroGreen .seg6:before {border-color: transparent #32BF00 transparent transparent;}
+.quatroGreen .seg6:after {border-color: transparent transparent transparent #32BF00;}
+
 /* Digito cinco */
 .cinco .seg1 {background-color: #262A34;}
 .cinco .seg2 {background-color: #262A34;}
 .cinco .seg5 {background-color: #262A34;}
 .cinco .seg6 {background-color: #262A34;}
 .cinco .seg7 {background-color: #262A34;}
-.cinco .seg1:before {border-color: transparent  #262626 transparent transparent;}
+.cinco .seg1:before {border-color: transparent #262626 transparent transparent;}
 .cinco .seg1:after {border-color: #262626 transparent transparent transparent;}
 .cinco .seg2:before {border-color: transparent transparent transparent #262626 ;}
 .cinco .seg2:after {border-color: #262626 transparent transparent transparent;}
@@ -473,6 +625,40 @@ hr {
 .cinco .seg7:before {border-color: transparent transparent #262626 transparent;}
 .cinco .seg7:after {border-color: transparent transparent transparent #262626;}
 
+/* Digito cincoRed */
+.cincoRed .seg1 {background-color: #CC3300;}
+.cincoRed .seg2 {background-color: #CC3300;}
+.cincoRed .seg5 {background-color: #CC3300;}
+.cincoRed .seg6 {background-color: #CC3300;}
+.cincoRed .seg7 {background-color: #CC3300;}
+.cincoRed .seg1:before {border-color: transparent #CC3300 transparent transparent;}
+.cincoRed .seg1:after {border-color: #CC3300 transparent transparent transparent;}
+.cincoRed .seg2:before {border-color: transparent transparent transparent #CC3300 ;}
+.cincoRed .seg2:after {border-color: #CC3300 transparent transparent transparent;}
+.cincoRed .seg5:before {border-color: transparent transparent #CC3300 transparent;}
+.cincoRed .seg5:after {border-color: transparent #CC3300 transparent transparent;}
+.cincoRed .seg6:before {border-color: transparent #CC3300 transparent transparent;}
+.cincoRed .seg6:after {border-color: transparent transparent transparent #CC3300;}
+.cincoRed .seg7:before {border-color: transparent transparent #CC3300 transparent;}
+.cincoRed .seg7:after {border-color: transparent transparent transparent #CC3300;}
+
+/* Digito cincoGreen */
+.cincoGreen .seg1 {background-color: #32BF00;}
+.cincoGreen .seg2 {background-color: #32BF00;}
+.cincoGreen .seg5 {background-color: #32BF00;}
+.cincoGreen .seg6 {background-color: #32BF00;}
+.cincoGreen .seg7 {background-color: #32BF00;}
+.cincoGreen .seg1:before {border-color: transparent #32BF00 transparent transparent;}
+.cincoGreen .seg1:after {border-color: #32BF00 transparent transparent transparent;}
+.cincoGreen .seg2:before {border-color: transparent transparent transparent #32BF00 ;}
+.cincoGreen .seg2:after {border-color: #32BF00 transparent transparent transparent;}
+.cincoGreen .seg5:before {border-color: transparent transparent #32BF00 transparent;}
+.cincoGreen .seg5:after {border-color: transparent #32BF00 transparent transparent;}
+.cincoGreen .seg6:before {border-color: transparent #32BF00 transparent transparent;}
+.cincoGreen .seg6:after {border-color: transparent transparent transparent #32BF00;}
+.cincoGreen .seg7:before {border-color: transparent transparent #32BF00 transparent;}
+.cincoGreen .seg7:after {border-color: transparent transparent transparent #32BF00;}
+
 /* Digito seis */
 .seis .seg1 {background-color: #262A34;}
 .seis .seg2 {background-color: #262A34;}
@@ -480,7 +666,7 @@ hr {
 .seis .seg5 {background-color: #262A34;}
 .seis .seg6 {background-color: #262A34;}
 .seis .seg7 {background-color: #262A34;}
-.seis .seg1:before {border-color: transparent  #262626 transparent transparent;}
+.seis .seg1:before {border-color: transparent #262626 transparent transparent;}
 .seis .seg1:after {border-color: #262626 transparent transparent transparent;}
 .seis .seg2:before {border-color: transparent transparent transparent #262626 ;}
 .seis .seg2:after {border-color: #262626 transparent transparent transparent;}
@@ -493,16 +679,78 @@ hr {
 .seis .seg7:before {border-color: transparent transparent #262626 transparent;}
 .seis .seg7:after {border-color: transparent transparent transparent #262626;}
 
+/* Digito seisRed */
+.seisRed .seg1 {background-color: #CC3300;}
+.seisRed .seg2 {background-color: #CC3300;}
+.seisRed .seg4 {background-color: #CC3300;}
+.seisRed .seg5 {background-color: #CC3300;}
+.seisRed .seg6 {background-color: #CC3300;}
+.seisRed .seg7 {background-color: #CC3300;}
+.seisRed .seg1:before {border-color: transparent #CC3300 transparent transparent;}
+.seisRed .seg1:after {border-color: #CC3300 transparent transparent transparent;}
+.seisRed .seg2:before {border-color: transparent transparent transparent #CC3300;}
+.seisRed .seg2:after {border-color: #CC3300 transparent transparent transparent;}
+.seisRed .seg4:before {border-color: transparent transparent transparent #CC3300;}
+.seisRed .seg4:after {border-color: #CC3300 transparent transparent transparent;}
+.seisRed .seg5:before {border-color: transparent transparent #CC3300 transparent;}
+.seisRed .seg5:after {border-color: transparent #CC3300 transparent transparent;}
+.seisRed .seg6:before {border-color: transparent #CC3300 transparent transparent;}
+.seisRed .seg6:after {border-color: transparent transparent transparent #CC3300;}
+.seisRed .seg7:before {border-color: transparent transparent #CC3300 transparent;}
+.seisRed .seg7:after {border-color: transparent transparent transparent #CC3300;}
+
+/* Digito seisGreen */
+.seisGreen .seg1 {background-color: #32BF00;}
+.seisGreen .seg2 {background-color: #32BF00;}
+.seisGreen .seg4 {background-color: #32BF00;}
+.seisGreen .seg5 {background-color: #32BF00;}
+.seisGreen .seg6 {background-color: #32BF00;}
+.seisGreen .seg7 {background-color: #32BF00;}
+.seisGreen .seg1:before {border-color: transparent #32BF00 transparent transparent;}
+.seisGreen .seg1:after {border-color: #32BF00 transparent transparent transparent;}
+.seisGreen .seg2:before {border-color: transparent transparent transparent #32BF00;}
+.seisGreen .seg2:after {border-color: #32BF00 transparent transparent transparent;}
+.seisGreen .seg4:before {border-color: transparent transparent transparent #32BF00;}
+.seisGreen .seg4:after {border-color: #32BF00 transparent transparent transparent;}
+.seisGreen .seg5:before {border-color: transparent transparent #32BF00 transparent;}
+.seisGreen .seg5:after {border-color: transparent #32BF00 transparent transparent;}
+.seisGreen .seg6:before {border-color: transparent #32BF00 transparent transparent;}
+.seisGreen .seg6:after {border-color: transparent transparent transparent #32BF00;}
+.seisGreen .seg7:before {border-color: transparent transparent #32BF00 transparent;}
+.seisGreen .seg7:after {border-color: transparent transparent transparent #32BF00;}
+
 /* Digito sete */
 .sete .seg1 {background-color: #262A34;}
 .sete .seg3 {background-color: #262A34;}
 .sete .seg5 {background-color: #262A34;}
-.sete .seg1:before {border-color: transparent  #262626 transparent transparent;}
+.sete .seg1:before {border-color: transparent #262626 transparent transparent;}
 .sete .seg1:after {border-color: #262626 transparent transparent transparent;}
 .sete .seg3:before {border-color: transparent transparent #262626 transparent;}
 .sete .seg3:after {border-color: transparent #262626 transparent transparent;}
 .sete .seg5:before {border-color: transparent transparent #262626 transparent;}
 .sete .seg5:after {border-color: transparent #262626 transparent transparent;}
+
+/* Digito seteRed */
+.seteRed .seg1 {background-color: #CC3300;}
+.seteRed .seg3 {background-color: #CC3300;}
+.seteRed .seg5 {background-color: #CC3300;}
+.seteRed .seg1:before {border-color: transparent #CC3300 transparent transparent;}
+.seteRed .seg1:after {border-color: #CC3300 transparent transparent transparent;}
+.seteRed .seg3:before {border-color: transparent transparent #CC3300 transparent;}
+.seteRed .seg3:after {border-color: transparent #CC3300 transparent transparent;}
+.seteRed .seg5:before {border-color: transparent transparent #CC3300 transparent;}
+.seteRed .seg5:after {border-color: transparent #CC3300 transparent transparent;}
+
+/* Digito seteGreen */
+.seteGreen .seg1 {background-color: #32BF00;}
+.seteGreen .seg3 {background-color: #32BF00;}
+.seteGreen .seg5 {background-color: #32BF00;}
+.seteGreen .seg1:before {border-color: transparent #32BF00 transparent transparent;}
+.seteGreen .seg1:after {border-color: #32BF00 transparent transparent transparent;}
+.seteGreen .seg3:before {border-color: transparent transparent #32BF00 transparent;}
+.seteGreen .seg3:after {border-color: transparent #32BF00 transparent transparent;}
+.seteGreen .seg5:before {border-color: transparent transparent #32BF00 transparent;}
+.seteGreen .seg5:after {border-color: transparent #32BF00 transparent transparent;}
 
 /* Digito oito */
 .oito .seg1 {background-color: #262A34;}
@@ -514,7 +762,7 @@ hr {
 .oito .seg7 {background-color: #262A34;}
 .oito .seg1:before {border-color: transparent #262626 transparent transparent;}
 .oito .seg1:after {border-color: #262626 transparent transparent transparent;}
-.oito .seg2:before {border-color: transparent transparent transparent #262626 ;}
+.oito .seg2:before {border-color: transparent transparent transparent #262626;}
 .oito .seg2:after {border-color: #262626 transparent transparent transparent;}
 .oito .seg3:before {border-color: transparent transparent #262626 transparent;}
 .oito .seg3:after {border-color: transparent #262626 transparent transparent;}
@@ -526,6 +774,52 @@ hr {
 .oito .seg6:after {border-color: transparent transparent transparent #262626;}
 .oito .seg7:before {border-color: transparent transparent #262626 transparent;}
 .oito .seg7:after {border-color: transparent transparent transparent #262626;}
+
+/* Digito oitoRed */
+.oitoRed .seg1 {background-color: #CC3300;}
+.oitoRed .seg2 {background-color: #CC3300;}
+.oitoRed .seg3 {background-color: #CC3300;}
+.oitoRed .seg4 {background-color: #CC3300;}
+.oitoRed .seg5 {background-color: #CC3300;}
+.oitoRed .seg6 {background-color: #CC3300;}
+.oitoRed .seg7 {background-color: #CC3300;}
+.oitoRed .seg1:before {border-color: transparent #CC3300 transparent transparent;}
+.oitoRed .seg1:after {border-color: #CC3300 transparent transparent transparent;}
+.oitoRed .seg2:before {border-color: transparent transparent transparent #CC3300 ;}
+.oitoRed .seg2:after {border-color: #CC3300 transparent transparent transparent;}
+.oitoRed .seg3:before {border-color: transparent transparent #CC3300 transparent;}
+.oitoRed .seg3:after {border-color: transparent #CC3300 transparent transparent;}
+.oitoRed .seg4:before {border-color: transparent transparent transparent #CC3300;}
+.oitoRed .seg4:after {border-color: #CC3300 transparent transparent transparent;}
+.oitoRed .seg5:before {border-color: transparent transparent #CC3300 transparent;}
+.oitoRed .seg5:after {border-color: transparent #CC3300 transparent transparent;}
+.oitoRed .seg6:before {border-color: transparent #CC3300 transparent transparent;}
+.oitoRed .seg6:after {border-color: transparent transparent transparent #CC3300;}
+.oitoRed .seg7:before {border-color: transparent transparent #CC3300 transparent;}
+.oitoRed .seg7:after {border-color: transparent transparent transparent #CC3300;}
+
+/* Digito oitoGreen */
+.oitoGreen .seg1 {background-color: #32BF00;}
+.oitoGreen .seg2 {background-color: #32BF00;}
+.oitoGreen .seg3 {background-color: #32BF00;}
+.oitoGreen .seg4 {background-color: #32BF00;}
+.oitoGreen .seg5 {background-color: #32BF00;}
+.oitoGreen .seg6 {background-color: #32BF00;}
+.oitoGreen .seg7 {background-color: #32BF00;}
+.oitoGreen .seg1:before {border-color: transparent #32BF00 transparent transparent;}
+.oitoGreen .seg1:after {border-color: #32BF00 transparent transparent transparent;}
+.oitoGreen .seg2:before {border-color: transparent transparent transparent #32BF00;}
+.oitoGreen .seg2:after {border-color: #32BF00 transparent transparent transparent;}
+.oitoGreen .seg3:before {border-color: transparent transparent #32BF00 transparent;}
+.oitoGreen .seg3:after {border-color: transparent #32BF00 transparent transparent;}
+.oitoGreen .seg4:before {border-color: transparent transparent transparent #32BF00;}
+.oitoGreen .seg4:after {border-color: #32BF00 transparent transparent transparent;}
+.oitoGreen .seg5:before {border-color: transparent transparent #32BF00 transparent;}
+.oitoGreen .seg5:after {border-color: transparent #32BF00 transparent transparent;}
+.oitoGreen .seg6:before {border-color: transparent #32BF00 transparent transparent;}
+.oitoGreen .seg6:after {border-color: transparent transparent transparent #32BF00;}
+.oitoGreen .seg7:before {border-color: transparent transparent #32BF00 transparent;}
+.oitoGreen .seg7:after {border-color: transparent transparent transparent #32BF00;}
 
 /* Digito nove */
 .nove .seg1 {background-color: #262A34;}
@@ -543,6 +837,40 @@ hr {
 .nove .seg5:after {border-color: transparent #262626 transparent transparent;}
 .nove .seg6:before {border-color: transparent #262626 transparent transparent;}
 .nove .seg6:after {border-color: transparent transparent transparent #262626;}
+
+/* Digito noveRed */
+.noveRed .seg1 {background-color: #CC3300;}
+.noveRed .seg2 {background-color: #CC3300;}
+.noveRed .seg3 {background-color: #CC3300;}
+.noveRed .seg5 {background-color: #CC3300;}
+.noveRed .seg6 {background-color: #CC3300;}
+.noveRed .seg1:before {border-color: transparent #CC3300 transparent transparent;}
+.noveRed .seg1:after {border-color: #CC3300 transparent transparent transparent;}
+.noveRed .seg2:before {border-color: transparent transparent transparent #CC3300;}
+.noveRed .seg2:after {border-color: #CC3300 transparent transparent transparent;}
+.noveRed .seg3:before {border-color: transparent transparent #CC3300 transparent;}
+.noveRed .seg3:after {border-color: transparent #CC3300 transparent transparent;}
+.noveRed .seg5:before {border-color: transparent transparent #CC3300 transparent;}
+.noveRed .seg5:after {border-color: transparent #CC3300 transparent transparent;}
+.noveRed .seg6:before {border-color: transparent #CC3300 transparent transparent;}
+.noveRed .seg6:after {border-color: transparent transparent transparent #CC3300;}
+
+/* Digito noveGreen */
+.noveGreen .seg1 {background-color: #32BF00;}
+.noveGreen .seg2 {background-color: #32BF00;}
+.noveGreen .seg3 {background-color: #32BF00;}
+.noveGreen .seg5 {background-color: #32BF00;}
+.noveGreen .seg6 {background-color: #32BF00;}
+.noveGreen .seg1:before {border-color: transparent #32BF00 transparent transparent;}
+.noveGreen .seg1:after {border-color: #32BF00 transparent transparent transparent;}
+.noveGreen .seg2:before {border-color: transparent transparent transparent #32BF00;}
+.noveGreen .seg2:after {border-color: #32BF00 transparent transparent transparent;}
+.noveGreen .seg3:before {border-color: transparent transparent #32BF00 transparent;}
+.noveGreen .seg3:after {border-color: transparent #32BF00 transparent transparent;}
+.noveGreen .seg5:before {border-color: transparent transparent #32BF00 transparent;}
+.noveGreen .seg5:after {border-color: transparent #32BF00 transparent transparent;}
+.noveGreen .seg6:before {border-color: transparent #32BF00 transparent transparent;}
+.noveGreen .seg6:after {border-color: transparent transparent transparent #32BF00;}
 
 /* responsividade */
 
