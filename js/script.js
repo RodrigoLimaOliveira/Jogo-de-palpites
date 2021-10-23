@@ -23,12 +23,12 @@ function jogar() {
     console.log(resposta); /*para debugar*/
 
     if (statusCode == "200") { /* confere se requisição retornou ok */
-        if(palpite > resposta) {
+        if(palpite < resposta) {
             mudarDigito();
             apagarDigito();
             document.getElementById("resultado").innerHTML = "É maior";
         }
-        else if (palpite < resposta) {
+        else if (palpite > resposta) {
             mudarDigito();
             apagarDigito();
             document.getElementById("resultado").innerHTML = "É menor";
