@@ -11,7 +11,7 @@ function fazerGet(url) {
     return request
 }
 const json = (fazerGet("https://us-central1-ss-devops.cloudfunctions.net/rand?min=1&max=300"));
-console.log(json); /*para debugar*/
+/*console.log(json); para debugar*/
 
 function jogar() {
     var resposta = JSON.parse(json.responseText).value;
