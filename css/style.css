@@ -14,7 +14,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* estilo geral */
 
 html {
-    background-image: linear-gradient(180deg, #EEEEEE 0%, #FFFFFF 100%);
+    background-image: linear-gradient(180deg, #EEEEEE 0%, #FFFFFF 100%) no-repeat;
     width: 100%;
     height: 100%;
 }
