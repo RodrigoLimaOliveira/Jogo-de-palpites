@@ -3,37 +3,34 @@ function main() {
     limparInput();
 }
 
-/* Função de envio da requisição*/
+/* Função de envio da requisição */
 function fazerGet(url) {
     let request = new XMLHttpRequest()
-    request.open("GET", url, false)
+    request.open("GET", url, true)
     request.send()
     return request
 }
-
 const json = (fazerGet("https://us-central1-ss-devops.cloudfunctions.net/rand?min=1&max=300"));
-var resposta = JSON.parse(json.responseText).value;
-var statusCode = json.status;
+console.log(json); /*para debugar*/
 
-/*Função que compara o palpite com o valor aleatório recebido na requisição*/
 function jogar() {
+    var resposta = JSON.parse(json.responseText).value;
+    var statusCode = json.status;
     var palpite = document.getElementById("palpite").value;
     var btnJogar = document.getElementById("btnJogar");
     
-    console.log(resposta); /*para debugar*/
-
-    if (statusCode == "200") { /* confere se requisição retornou ok */
-        if(palpite < resposta) {
+    if (statusCode == "200") { /* executa o bloco caso a requisiçõa retorne "ok" */
+        if(resposta > palpite) {
             mudarDigito();
             apagarDigito();
             document.getElementById("resultado").innerHTML = "É maior";
         }
-        else if (palpite > resposta) {
+        else if (resposta < palpite) {
             mudarDigito();
             apagarDigito();
             document.getElementById("resultado").innerHTML = "É menor";
         }
-        else if (palpite == resposta) {
+        else if (resposta == palpite) {
             mudarDigitoVerde();
             apagarDigito();
             document.getElementById("resultado").innerHTML = "Você acertou!!!!";
@@ -42,7 +39,7 @@ function jogar() {
             document.getElementById("palpite").disabled = true;
             btnJogar.disabled = true;
             btnJogar.style.background = "#DDDDDD";
-            /*acionar botão com enter */
+            /*acionar botão "nova partida" com enter */
             document.addEventListener("keypress", function(e) {
                 if(e.key === 'Enter') {
                     var btn = document.querySelector("#novaPartida");
@@ -52,7 +49,7 @@ function jogar() {
         }
     }
     else {
-        mudarDigitoVermelho();
+        mudarDigitoVermelho(); /* em caso de status code diferente de "ok" captura o erro e mostra no led */
         apagarDigitoErro();
         document.getElementById("resultado").innerHTML = "ERRO";
         document.getElementById("resultado").style.color = "#CC3300";
@@ -60,6 +57,13 @@ function jogar() {
         document.getElementById("palpite").disabled = true;
         btnJogar.disabled = true;
         btnJogar.style.background = "#DDDDDD";
+
+        document.addEventListener("keypress", function(e) {
+            if(e.key === 'Enter') {
+                var btn = document.querySelector("#novaPartida");
+                btn.click();
+            }
+          });
     }
 }
 
@@ -352,11 +356,13 @@ function mudarDigitoVerde() {
             break;
     }
 }
+
 /*Função para adicionar uma classe mudando o css do algarismo no mostrador de led*/
 function mudarDigitoVermelho() {
     
     /* primeiro digito */
     var element1 = document.querySelector("#segmentos-1");
+    var statusCode = json.status;
     
     switch(String(statusCode).charAt(0)) {
         case "0":
@@ -495,7 +501,7 @@ function mudarDigitoVermelho() {
             break;
     }
 }
-
+/* muda o valor do input para vazio sempre que o botão "enviar" é acionado */
 function limparInput(){
     document.getElementById("palpite").value = "";
 }
@@ -526,6 +532,7 @@ function apagarDigito(){
 
 function apagarDigitoErro(){
     /* verifica tamanho da string e remove os digitos não usados*/
+    var statusCode = json.status;
     var erro = String(statusCode); 
     var digito2 = document.getElementById("segmentos-2");
     var digito3 = document.getElementById("segmentos-3");

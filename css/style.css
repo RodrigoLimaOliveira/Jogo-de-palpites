@@ -1,5 +1,4 @@
 /* reset */
-
 * {
     margin: 0;
     padding: 0;
@@ -889,7 +888,19 @@ hr {
 .container:after {
 	clear: both;
 }
+
+/*smartphone*/
+
+@media only screen and (max-width: 767px) {
+
+    .container {
+        width: 300px;
+    }
+    
+    }
+
 /* Desktop e tablet */
+
 @media only screen and (min-width: 768px){ 
 
 .container {
@@ -954,15 +965,6 @@ hr {
     bottom: 82px;
     left: 10px;
     width: 50px; 
-}
-
-}
-/*smartphone*/
-
-@media only screen and (max-width: 767px) {
-
-.container {
-	width: 300px;
 }
 
 }
