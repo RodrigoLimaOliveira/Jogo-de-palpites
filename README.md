@@ -33,4 +33,7 @@ input deve ser resetado para o estado inicial.
 número ou quando o jogador acertou o palpite. O usuário deve clicar em "NOVA
 PARTIDA" neste caso.
 
+![Capturar](https://user-images.githubusercontent.com/56373539/149828330-1b098e59-4731-409f-8778-0ba8e58ecdf7.PNG)
+![rodrigolima atwebpages com_jogo_(Pixel 5) (1)](https://user-images.githubusercontent.com/56373539/149828342-d6fbcef1-2616-40ae-8823-021bb44ae989.png)
+![rodrigolima atwebpages com_jogo_(Pixel 5)](https://user-images.githubusercontent.com/56373539/149828352-90753761-9c71-4850-8dda-5a3f95e61d4b.png)
 
